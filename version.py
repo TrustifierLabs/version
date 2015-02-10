@@ -49,7 +49,7 @@ class _Seq(_Comparable):
 
 
 def _try_int(s):
-    assert type(s) is str
+    assert isinstance(s, basestring)
     try:
         return int(s)
     except ValueError:
