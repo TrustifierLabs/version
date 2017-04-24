@@ -1,6 +1,9 @@
+import sys
 import re
-from itertools import izip_longest
-
+if sys.version_info[0] < 3:
+    from itertools import izip_longest
+else:
+    from itertools import zip_longest as izip_longest
 
 class _Comparable(object):
 
